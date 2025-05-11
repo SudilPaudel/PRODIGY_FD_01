@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { authenticateUser } from '../utils/auth';
 import Navbar from '../components/NavBar';
 
@@ -178,7 +178,7 @@ const Login = () => {
                     <button type="submit">Sign In</button>
                 </form>
                 <div className="register-link">
-                    Don't have an account? <a href="/register">Register here</a>
+                    Don't have an account? <Link href="/register">Register here</Link>
                 </div>
             </div>
         </div>
