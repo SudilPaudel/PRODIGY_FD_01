@@ -14,7 +14,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res =await axios.post('http://localhost:4020/api/auth/register', form);
+            const res =await axios.post('https://prodigy-fd-01-1.onrender.com/api/auth/register', form);
             alert('Registration successful!');
             localStorage.setItem('auth-token', res.data.data.token);
             navigate('/dashboard');

@@ -16,7 +16,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:4020/api/auth/login', form);
+            const res = await axios.post('https://prodigy-fd-01-1.onrender.com/api/auth/login', form);
             authenticateUser(res.data.data.token);
             localStorage.setItem('auth-token', res.data.data.token);
             alert('Login successful!');

@@ -13,7 +13,7 @@ const Dashboard = () => {
     try {
       const token = localStorage.getItem('auth-token');
       console.log('Token retrieved:', token);
-      const res = await axios.get('http://localhost:4020/api/auth/protected', {
+      const res = await axios.get('https://prodigy-fd-01-1.onrender.com/api/auth/protected', {
         headers: { 'x-auth-token': token }
       });
       setData(res.data.message);
@@ -27,7 +27,7 @@ const Dashboard = () => {
   const fetchUserData = async ()=>{
     try {
       const token = localStorage.getItem('auth-token');
-      const res = await axios.get('http://localhost:4020/api/auth/me', {
+      const res = await axios.get('https://prodigy-fd-01-1.onrender.com/api/auth/me', {
         headers: { 'x-auth-token': token }
       });
       setFetchedUser(res.data.user);
