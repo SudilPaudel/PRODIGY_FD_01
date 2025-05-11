@@ -42,8 +42,7 @@ graph LR
 
 1. **Clone & Install**
 ```bash
-git clone https://github.com/<username>/mern-auth
-cd mern-auth
+git clone https://github.com/SudilPaudel/PRODIGY_FD_01
 ```
 
 2. **Configure Environment**
@@ -52,17 +51,15 @@ cd mern-auth
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_secret_key
 
-# /client/.env
-REACT_APP_API_URL=http://localhost:5000
 ```
 
 3. **Launch**
 ```bash
 # Backend
-cd server && npm start
+cd server && npm run dev
 
 # Frontend
-cd client && npm start
+cd client && npm run dev
 ```
 
 ## 📡 API Reference
@@ -80,10 +77,9 @@ cd client && npm start
 │   ├── src/
 │   │   ├── components/   # Reusable UI
 │   │   ├── pages/       # Route components
-│   │   └── context/     # Auth state
+│   │   └── utils/       # Utilities
 │
-└── server/               # Express API
-        ├── controllers/     # Route handlers
+└── server/               # Express API    
         ├── models/         # Data schemas
         └── middleware/     # Auth checks
 ```
@@ -106,7 +102,7 @@ cd client && npm start
     
 ### Built with ❤️ during my internship at Prodigy Infotech
 
-[Live Demo](https://your-demo-url.com) | [Documentation](https://your-docs-url.com) | [Report Bug](https://github.com/your-username/mern-auth/issues)
+[Live Demo](https://prodigy-fd-01-3.onrender.com/) | [Report Bug](https://github.com/SudilPaudel/PRODIGY_FD_01/issues)
 
 </div>
 
